@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 
 public class Character_Physics : MonoBehaviour
 {
@@ -6,7 +7,7 @@ public class Character_Physics : MonoBehaviour
     public float jumpStrength;
     public float movementSpeed;
     private Vector2 moveDirection;
-    private bool isGrounded = true;
+    private bool isGrounded;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -14,14 +15,9 @@ public class Character_Physics : MonoBehaviour
         moveDirection = Vector2.zero;
     }
 
-    void OnCollisionStay()
+    void OnCollisionEnter2D(Collision2D col)
     {
 		isGrounded = true;
-    }
-
-    void OnCollisionExit()
-    {
-        isGrounded = false;
     }
 
     // Update is called once per frame
@@ -30,6 +26,7 @@ public class Character_Physics : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
         {
             myRigidbody.linearVelocity = Vector2.up * jumpStrength;
+            isGrounded = false;
         }
 
         if (Input.GetKey(KeyCode.A))
@@ -45,6 +42,6 @@ public class Character_Physics : MonoBehaviour
             moveDirection.x = 0;
         }
 
-         myRigidbody.linearVelocity = new Vector2(moveDirection.x, myRigidbody.linearVelocity.y);
+        myRigidbody.linearVelocity = new Vector2(moveDirection.x, myRigidbody.linearVelocity.y);
     }
 }
