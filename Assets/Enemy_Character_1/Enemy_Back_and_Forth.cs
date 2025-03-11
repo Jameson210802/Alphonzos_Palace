@@ -12,6 +12,7 @@ public class Enemy_Back_and_Forth : MonoBehaviour
     {
         _mSpriteRenderer = gameObject.GetComponent<SpriteRenderer>();
         //_mSpriteRenderer.flipX = going_right; //need to check on later
+       
     }
 
     void Update()
@@ -28,7 +29,7 @@ public class Enemy_Back_and_Forth : MonoBehaviour
     private void CheckForWalls()
     {
         Vector3 raycastDirection = (going_right) ? Vector3.right : Vector3.left;
-
+        
         // Wall detection raycast
         RaycastHit2D wallHit = Physics2D.Raycast(transform.position + raycastDirection * mRaycastingDistance - new Vector3(0f, 0.25f, 0f), raycastDirection, 0.075f);
 
@@ -41,8 +42,10 @@ public class Enemy_Back_and_Forth : MonoBehaviour
         {
             going_right = !going_right;
             _mSpriteRenderer.flipX = !going_right;
+            
         }
     }
+
 
 
 }
