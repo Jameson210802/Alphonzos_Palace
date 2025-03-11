@@ -11,7 +11,7 @@ public class Enemy_Back_and_Forth : MonoBehaviour
     void Start()
     {
         _mSpriteRenderer = gameObject.GetComponent<SpriteRenderer>();
-        _mSpriteRenderer.flipX = going_right;
+        //_mSpriteRenderer.flipX = going_right; //need to check on later
     }
 
     void Update()
@@ -36,7 +36,7 @@ public class Enemy_Back_and_Forth : MonoBehaviour
             if (hit.transform.tag == "Terrain")
             {
                 going_right = !going_right;
-                _mSpriteRenderer.flipX = going_right;
+                _mSpriteRenderer.flipX = !going_right;
 
             }
         }
