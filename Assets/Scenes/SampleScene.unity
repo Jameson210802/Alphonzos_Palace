@@ -838,6 +838,10 @@ PrefabInstance:
       propertyPath: m_FlipX
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 841731883312748500, guid: ac0baa182089d184a8c1c16c63fd328f, type: 3}
+      propertyPath: m_FlipY
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4986747729602303531, guid: ac0baa182089d184a8c1c16c63fd328f, type: 3}
       propertyPath: m_LocalPosition.x
       value: -6.41

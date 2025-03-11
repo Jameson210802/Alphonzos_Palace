@@ -271,6 +271,94 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: walking_idle_goblin_sprite_v2_7
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 68
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7d647f6a055b744988efc13ac27468b
+      internalID: 748995180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walking_idle_goblin_sprite_v2_8
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 68
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c45a562c1ebdd54ca212c7505f5e0d7
+      internalID: 1890064862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walking_idle_goblin_sprite_v2_9
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 68
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1d7de2dd65b9fc498bce7154086656a
+      internalID: -1870115161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walking_idle_goblin_sprite_v2_10
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 68
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 934d31197dfa1f3488d08846eda239a8
+      internalID: -1259201212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
@@ -287,11 +375,15 @@ TextureImporter:
     nameFileIdTable:
       walking_idle_goblin_sprite_v2_0: 7947708837262596696
       walking_idle_goblin_sprite_v2_1: 1409414070338659117
+      walking_idle_goblin_sprite_v2_10: -1259201212
       walking_idle_goblin_sprite_v2_2: 8679796869863136795
       walking_idle_goblin_sprite_v2_3: 7871037860527184829
       walking_idle_goblin_sprite_v2_4: 1623733322713526769
       walking_idle_goblin_sprite_v2_5: 8247853827449388662
       walking_idle_goblin_sprite_v2_6: -8926402505855950000
+      walking_idle_goblin_sprite_v2_7: 748995180
+      walking_idle_goblin_sprite_v2_8: 1890064862
+      walking_idle_goblin_sprite_v2_9: -1870115161
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
