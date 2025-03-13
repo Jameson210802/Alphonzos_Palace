@@ -56,5 +56,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "TestProj.sln"
+    "dotnet.defaultSolution": "Alphonzos_Palace.sln"
 }
