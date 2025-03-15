@@ -8,6 +8,8 @@ public class Character_Physics : MonoBehaviour
     public float movementSpeed;
     private Vector2 moveDirection;
     private bool isGrounded;
+
+    [HideInInspector] public bool isFacingRight = true;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -32,10 +34,12 @@ public class Character_Physics : MonoBehaviour
         if (Input.GetKey(KeyCode.A))
         {
             moveDirection.x = -movementSpeed;
+            if (isFacingRight) Flip();        
         }
         else if (Input.GetKey(KeyCode.D))
         {
             moveDirection.x = movementSpeed;
+            if (!isFacingRight) Flip();
         }
         else
         {
@@ -43,5 +47,13 @@ public class Character_Physics : MonoBehaviour
         }
 
         myRigidbody.linearVelocity = new Vector2(moveDirection.x, myRigidbody.linearVelocity.y);
+    }
+
+    void Flip()
+    {
+        isFacingRight = !isFacingRight;
+        Vector3 theScale = transform.localScale;
+        theScale.x *= -1;  // Flip the x-axis of the player
+        transform.localScale = theScale;
     }
 }

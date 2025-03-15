@@ -3,7 +3,6 @@ using UnityEngine;
 public class BulletScript : MonoBehaviour
 {
     public float bulletSpeed = 15f;
-    public float bulletDamage = 10f;
     public float timeToDestroy = 5f;
     public Rigidbody2D rb;
     
@@ -14,7 +13,7 @@ public class BulletScript : MonoBehaviour
 
     private void FixedUpdate()
     {
-        rb.linearVelocity = Vector2.right * bulletSpeed;
+        rb.linearVelocity = transform.right * bulletSpeed;
     }
 
     private void OnTriggerEnter2D(Collider2D target)
