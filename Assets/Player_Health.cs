@@ -1,10 +1,15 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerHealth : MonoBehaviour
 {
     public float bounce;         // Bounce force on collision
     public Rigidbody2D rb2D;     // Rigidbody for the player
-    public int lives = 3;        // Starting lives of the player
+    public int lives;        // Starting lives of the player
+    public GameObject Heart1;
+    public GameObject Heart2;
+    public GameObject Heart3;
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -15,11 +20,37 @@ public class PlayerHealth : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // You can handle health-based conditions, such as game over logic
-        if (lives <= 0)
+        switch (lives)
         {
-            // Handle game over logic (e.g., restart the level or show a game over screen)
-            Debug.Log("Game Over!");
+            case 0:
+            {
+                Heart1.gameObject.SetActive(false);
+                Heart2.gameObject.SetActive(false);
+                Heart3.gameObject.SetActive(false);
+                Debug.Log("Game Over!");
+                break;
+            }
+            case 1:
+            {
+                Heart1.gameObject.SetActive(true);
+                Heart2.gameObject.SetActive(false);
+                Heart3.gameObject.SetActive(false);
+                break;
+            }
+            case 2:
+            {
+                Heart1.gameObject.SetActive(true);
+                Heart2.gameObject.SetActive(true);
+                Heart3.gameObject.SetActive(false);
+                break;
+            }
+            case 3:
+            {
+                Heart1.gameObject.SetActive(true);
+                Heart2.gameObject.SetActive(true);
+                Heart3.gameObject.SetActive(true);
+                break;
+            }
         }
     }
 

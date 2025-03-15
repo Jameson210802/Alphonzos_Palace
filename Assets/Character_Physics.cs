@@ -19,7 +19,10 @@ public class Character_Physics : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D col)
     {
-		isGrounded = true;
+        if (col.gameObject.CompareTag("Terrain"))
+        {
+		    isGrounded = true;
+        }
     }
 
     // Update is called once per frame
