@@ -578,7 +578,7 @@ GameObject:
   - component: {fileID: 566028087}
   - component: {fileID: 566028086}
   m_Layer: 0
-  m_Name: Button Select
+  m_Name: Button Selected
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1320,7 +1320,7 @@ GameObject:
   - component: {fileID: 1115960515}
   - component: {fileID: 1115960514}
   m_Layer: 0
-  m_Name: Button Hover
+  m_Name: Button Hovering
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
