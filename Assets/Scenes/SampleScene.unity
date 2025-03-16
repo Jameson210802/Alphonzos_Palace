@@ -1827,6 +1827,18 @@ PrefabInstance:
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1765012749473909488, guid: 62bc3a9ac9d7bb741af5b392210e293f, type: 3}
+      propertyPath: Heart1
+      value: 
+      objectReference: {fileID: 7996401409624628215}
+    - target: {fileID: 1765012749473909488, guid: 62bc3a9ac9d7bb741af5b392210e293f, type: 3}
+      propertyPath: Heart2
+      value: 
+      objectReference: {fileID: 1768057770}
+    - target: {fileID: 1765012749473909488, guid: 62bc3a9ac9d7bb741af5b392210e293f, type: 3}
+      propertyPath: Heart3
+      value: 
+      objectReference: {fileID: 547427128}
+    - target: {fileID: 1765012749473909488, guid: 62bc3a9ac9d7bb741af5b392210e293f, type: 3}
       propertyPath: bounce
       value: 7
       objectReference: {fileID: 0}
