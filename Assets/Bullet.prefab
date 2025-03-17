@@ -130,7 +130,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletSpeed: 15
-  timeToDestroy: 2
+  timeToDestroy: 0.5
   rb: {fileID: 15391925181046854}
   score: {fileID: 0}
 --- !u!58 &9156022359348623143
