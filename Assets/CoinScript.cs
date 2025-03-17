@@ -3,12 +3,12 @@ using UnityEngine;
 public class CoinScript : MonoBehaviour
 {
     public Rigidbody2D rb;
-    public AudioSource collectCoin;
+    public ScoreScript score;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        score = GameObject.FindGameObjectWithTag("Score").GetComponent<ScoreScript>();
     }
 
     // Update is called once per frame
@@ -21,8 +21,9 @@ public class CoinScript : MonoBehaviour
     {
         if (col.CompareTag("Player"))
         {
-            collectCoin.Play();
             Destroy(gameObject);
+
+            score.addScore(5);
         }
     }
 }
