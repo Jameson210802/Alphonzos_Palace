@@ -6,6 +6,7 @@ public class ShootScript : MonoBehaviour
     public Transform firingPoint;
     public GameObject bulletPrefab;
     private Animator animator;
+    public AudioSource bulletShoot;
 
     float timeUntilFire;
     Character_Physics playerMovement;
@@ -30,6 +31,7 @@ public class ShootScript : MonoBehaviour
     {
         Debug.Log("Triggering Attack Animation");
         animator.SetTrigger("player_attack");
+        bulletShoot.Play();
         float angle = playerMovement.isFacingRight ? 0f : 180f;
         Instantiate(bulletPrefab, firingPoint.position, Quaternion.Euler(new Vector3(0f, 0f, angle)));
     }

@@ -32,7 +32,7 @@ Transform:
   m_GameObject: {fileID: 8497227110776822554}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.405, y: -0.379, z: 0.05459918}
+  m_LocalPosition: {x: -6.405, y: -0.379, z: -2.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -186,7 +186,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.75, y: 0.75}
+  m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
 --- !u!114 &1858470315008091323
 MonoBehaviour:
@@ -217,6 +217,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 2
   currentHealth: 0
+  goblinDamaged: {fileID: 6498592849716107109, guid: ff74903d8527a6445b4bd8addf7bac65, type: 3}
+  goblinDead: {fileID: 5674263780463489310, guid: aa0e8b2631e11574284efbd2eb40aa81, type: 3}
 --- !u!114 &5566944990069450838
 MonoBehaviour:
   m_ObjectHideFlags: 0
