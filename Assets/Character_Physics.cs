@@ -6,6 +6,9 @@ public class Character_Physics : MonoBehaviour
     public Rigidbody2D myRigidbody;
     public float jumpStrength;
     public float movementSpeed;
+    public AudioSource jumpSound;
+    public AudioSource walkSound;
+
     private Vector2 moveDirection;
     private bool isGrounded;
 
@@ -22,6 +25,11 @@ public class Character_Physics : MonoBehaviour
         if (col.gameObject.CompareTag("Terrain"))
         {
             isGrounded = true;
+            if (isGrounded && (Input.GetKey(KeyCode.A)||Input.GetKey(KeyCode.D)))
+            {
+                walkSound.Play();
+            }
+
         }
     }
 
@@ -30,6 +38,8 @@ public class Character_Physics : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
         {
+            walkSound.Stop();
+            jumpSound.Play();
             myRigidbody.linearVelocity = Vector2.up * jumpStrength;
             isGrounded = false;
         }
