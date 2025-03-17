@@ -43,4 +43,12 @@ public class Goblin_Health : MonoBehaviour
         
         }
     }
+
+    private void OnTriggerEnter2D(Collider2D col)
+    {
+        if (col.CompareTag("Bullet"))
+        {
+            goblinDead.Play();
+        }
+    }
 }
