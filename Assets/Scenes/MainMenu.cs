@@ -10,11 +10,15 @@ public class MainMenu : MonoBehaviour
 
     public void PlayGame()
     {
+        titleBGM.Stop();
+        DontDestroyOnLoad(checkpointZeroBGM);
+        checkpointZeroBGM.Play();
         SceneManager.LoadScene("The Gauntlet");
     }
 
     public void QuitGame()
     {
+        titleBGM.Stop();
         Application.Quit();
     }
 }
