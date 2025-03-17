@@ -10,7 +10,7 @@ public class Character_Physics : MonoBehaviour
     private bool isGrounded;
 
     [HideInInspector] public bool isFacingRight = true;
-    
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -21,7 +21,7 @@ public class Character_Physics : MonoBehaviour
     {
         if (col.gameObject.CompareTag("Terrain"))
         {
-		    isGrounded = true;
+            isGrounded = true;
         }
     }
 
@@ -37,7 +37,7 @@ public class Character_Physics : MonoBehaviour
         if (Input.GetKey(KeyCode.A))
         {
             moveDirection.x = -movementSpeed;
-            if (isFacingRight) Flip();        
+            if (isFacingRight) Flip();
         }
         else if (Input.GetKey(KeyCode.D))
         {

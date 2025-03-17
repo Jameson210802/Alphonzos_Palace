@@ -177,9 +177,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b440099d68cd7b47a382e5e64d01ac0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myRigidbody: {fileID: 6584080286940107139}
-  jumpStrength: 12
-  movementSpeed: 5
+  horizontalVelo: 0
+  verticalVelo: 0
+  isFacingRight: 1
 --- !u!114 &1765012749473909488
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -195,6 +195,9 @@ MonoBehaviour:
   bounce: 0
   rb2D: {fileID: 6584080286940107139}
   lives: 0
+  Heart1: {fileID: 0}
+  Heart2: {fileID: 0}
+  Heart3: {fileID: 0}
 --- !u!114 &390250453804803970
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -207,3 +210,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84fd2d0799fd65949b8754e34563065a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fireRate: 0.2
+  firingPoint: {fileID: 0}
+  bulletPrefab: {fileID: 0}
