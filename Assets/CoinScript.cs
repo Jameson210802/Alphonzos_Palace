@@ -4,6 +4,7 @@ public class CoinScript : MonoBehaviour
 {
     public Rigidbody2D rb;
     public ScoreScript score;
+    public AudioSource coinCollect;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -21,6 +22,7 @@ public class CoinScript : MonoBehaviour
     {
         if (col.CompareTag("Player"))
         {
+            coinCollect.Play();
             Destroy(gameObject);
 
             score.addScore(5);
