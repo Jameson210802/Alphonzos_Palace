@@ -25,9 +25,9 @@ public class Goblin_Health : MonoBehaviour
     }
     public void takeDamage(int amount) // need to test
     {
+        goblinDamaged.Play();
         currentHealth -= amount;
         Enemy_Back_and_Forth enemyMovement = GetComponent<Enemy_Back_and_Forth>();
-        goblinDamaged.Play();
         if (currentHealth <= 0)   // Destroys object if out of health. 
         {
             goblinDead.Play();

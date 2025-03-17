@@ -11,8 +11,9 @@ public class MainMenu : MonoBehaviour
     public void PlayGame()
     {
         titleBGM.Stop();
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        DontDestroyOnLoad(checkpointZeroBGM);
         checkpointZeroBGM.Play();
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
     public void QuitGame()
