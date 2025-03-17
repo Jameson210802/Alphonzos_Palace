@@ -39,7 +39,7 @@ public class Character_Physics : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
         {
-            animator.SetTrigger("jump");
+            animator.SetTrigger("player_jump");
             walkSound.Stop();
             jumpSound.Play();
             myRigidbody.linearVelocity = Vector2.up * jumpStrength;
