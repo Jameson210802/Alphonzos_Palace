@@ -217,6 +217,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 2
   currentHealth: 0
+  goblinDamaged: {fileID: 6498592849716107109, guid: ff74903d8527a6445b4bd8addf7bac65, type: 3}
+  goblinDead: {fileID: 5674263780463489310, guid: aa0e8b2631e11574284efbd2eb40aa81, type: 3}
 --- !u!114 &5566944990069450838
 MonoBehaviour:
   m_ObjectHideFlags: 0

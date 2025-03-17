@@ -5,6 +5,7 @@ public class ShootScript : MonoBehaviour
     public float fireRate = 0.2f;
     public Transform firingPoint;
     public GameObject bulletPrefab;
+    public AudioSource bulletShoot;
 
     float timeUntilFire;
     Character_Physics playerMovement;
@@ -25,6 +26,7 @@ public class ShootScript : MonoBehaviour
 
     void Shoot()
     {
+        bulletShoot.Play();
         float angle = playerMovement.isFacingRight ? 0f : 180f;
         Instantiate(bulletPrefab, firingPoint.position, Quaternion.Euler(new Vector3(0f, 0f, angle)));
     }
