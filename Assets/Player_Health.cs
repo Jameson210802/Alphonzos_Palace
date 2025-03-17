@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class PlayerHealth : MonoBehaviour
@@ -29,6 +30,7 @@ public class PlayerHealth : MonoBehaviour
                 Heart2.gameObject.SetActive(false);
                 Heart3.gameObject.SetActive(false);
                 Debug.Log("Game Over!");
+                SceneManager.LoadScene("GAMEOVER");
                 break;
             }
             case 1:
