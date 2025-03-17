@@ -3,6 +3,7 @@ using UnityEngine;
 public class CoinScript : MonoBehaviour
 {
     public Rigidbody2D rb;
+    public AudioSource collectCoin;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -20,6 +21,7 @@ public class CoinScript : MonoBehaviour
     {
         if (col.CompareTag("Player"))
         {
+            collectCoin.Play();
             Destroy(gameObject);
         }
     }
