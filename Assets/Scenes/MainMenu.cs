@@ -10,6 +10,11 @@ public class MainMenu : MonoBehaviour
 
     public void PlayGame()
     {
+        if (titleBGM == null)
+        {
+            Debug.LogError("titleBGM is not assigned in the Inspector!");
+            return;
+        }
         titleBGM.Stop();
         DontDestroyOnLoad(checkpointZeroBGM);
         checkpointZeroBGM.Play();
