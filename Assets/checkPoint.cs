@@ -1,4 +1,7 @@
 using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 
 public class checkPoint : MonoBehaviour
 {
@@ -21,6 +24,7 @@ public class checkPoint : MonoBehaviour
         if (col.CompareTag("Player"))
         {
             Debug.Log("You Win!");
+            SceneManager.LoadScene("YOUWIN");
         }
     }
 }
