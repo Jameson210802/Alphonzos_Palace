@@ -9,6 +9,7 @@ public class PlayerHealth : MonoBehaviour
     public GameObject Heart1;
     public GameObject Heart2;
     public GameObject Heart3;
+    public AudioSource playerDamaged;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -59,6 +60,7 @@ public class PlayerHealth : MonoBehaviour
     {
         if (other.CompareTag("Enemy"))
         {
+            playerDamaged.Play();
             // Decrease player's lives
             lives--;
 

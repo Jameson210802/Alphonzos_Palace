@@ -6,6 +6,9 @@ public class Goblin_Health : MonoBehaviour
 {
     public int maxHealth = 2; // maxhealth
     public int currentHealth; //used for calculating health. 
+
+    public AudioSource goblinDamaged;
+    public AudioSource goblinDead;
   
     private Animator animator;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -24,8 +27,10 @@ public class Goblin_Health : MonoBehaviour
     {
         currentHealth -= amount;
         Enemy_Back_and_Forth enemyMovement = GetComponent<Enemy_Back_and_Forth>();
+        goblinDamaged.Play();
         if (currentHealth <= 0)   // Destroys object if out of health. 
         {
+            goblinDead.Play();
             animator.SetBool("goblin_dead", true); // trigers death animation. 
 
             //GetComponent<Collider2D>().enabled = false; // Disable collision

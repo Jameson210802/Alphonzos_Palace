@@ -2092,6 +2092,10 @@ PrefabInstance:
       propertyPath: m_Offset.x
       value: -0.15
       objectReference: {fileID: 0}
+    - target: {fileID: 7830602292681329582, guid: ac0baa182089d184a8c1c16c63fd328f, type: 3}
+      propertyPath: goblinDamaged
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 8497227110776822554, guid: ac0baa182089d184a8c1c16c63fd328f, type: 3}
       propertyPath: m_Name
       value: Goblin
